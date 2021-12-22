@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-sm-6">
+    <h1>Tweets</h1>
+  </div>
+
+  <div class="col-sm-6 text-right">
+  </div>
+</div>
+
+<div id="tweet_form">
+  <%= render "tweets/form", tweet: Tweet.new %>
+</div>
+
+<div id="tweets">
+  <%= render @tweets %>
+</div>

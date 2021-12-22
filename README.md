@@ -1,24 +1,45 @@
-# README
+# FLASHES AND TOASTS WITH TURBO
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Implement Bootstrap flashes and Toasts with Turbo.
 
-Things you may want to cover:
+1. In action
+2. Sack
+3. Quickstart
 
-* Ruby version
+## 1. In action
+![flashes_toasts]()
 
-* System dependencies
+## 2. Stack
+- Rails 7
+- esbuild
+- Bootstrap 5
+- Stimulus
 
-* Configuration
+## 3. Quick Start
 
-* Database creation
+1. Install Rails 7
+  ```bash
+  gem install rails
+  ```
 
-* Database initialization
+2. Clone
+  ```bash
+  git@github.com:ThibautBaissac/flashes_toasts.git
+  ```
 
-* How to run the test suite
+3. Bundle & yarn install
+  ```bash
+  bundle
+  yarn install
+  ```
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Run rails db commands
+  ```bash
+  rails db:create
+  rails db:migrate
+  ```
 
-* Deployment instructions
-
-* ...
+5. Start Rails server
+  ```bash
+  ./bin/dev
+  ```
