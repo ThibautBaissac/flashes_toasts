@@ -1,0 +1,11 @@
+<div data-controller="toast" data-bs-delay="3000" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <img src="https://cdn-icons-png.flaticon.com/512/108/108925.png" class="rounded me-2" alt="" width=30>
+    <strong class="me-auto"><%= title %></strong>
+    <small><%= Time.new.strftime("%lh%Mmin%Ss") %></small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    <%= message %>
+  </div>
+</div>
