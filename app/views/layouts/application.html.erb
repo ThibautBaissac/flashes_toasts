@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FlashesToasts</title>
+    <title>Flashes & Toasts</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'shared/notices' %>
+    <div id="toasts" class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+    </div>
+    <div class="container mt-3">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
